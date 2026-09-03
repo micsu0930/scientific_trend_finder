@@ -45,7 +45,7 @@ Access the application at http://localhost:8501.
 
 ```mermaid
 graph TD
-    User["Non-Technical PhD Student"] -->|"1. Search keyword"| SearchUI["Streamlit App (app.py)"]
+    User["PhD Student"] -->|"1. Search keyword"| SearchUI["Streamlit App (app.py)"]
     User -->|"2. Select engine"| EngineSelect["Engine Configuration"]
     
     SearchUI -->|"3. Query top 5 articles"| PubMedAPI["PubMed Client (NCBI E-utilities)"]
@@ -60,7 +60,7 @@ graph TD
     CloudLLM -->|"Extract insights"| PydanticSchema["Pydantic Schema (PaperInsight)"]
     HeuristicEngine -->|"Extract insights"| PydanticSchema
     
-    PydanticSchema -->|"6. Render metrics & paper cards"| Dashboard["PhD Literature Dashboard"]
+    PydanticSchema -->|"6. Render metrics & paper cards"| Dashboard["Literature Dashboard"]
     Dashboard -->|"7. Export CSV"| CSVFile["pubmed_trends.csv"]
 ```
 
