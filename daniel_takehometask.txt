@@ -1,0 +1,45 @@
+================================================================================
+          INTERNSHIP TAKE-HOME TASK: SYSTEM SPECS
+================================================================================
+PROJECT: Scientific Literature Trend Finder
+TARGET USER: Non-technical PhD Students
+EXECUTION TIMEFRAME: 1 week
+
+1. Scope:
+   - Build a Python script that queries the free PubMed API for 1 keyword (e.g., "HIV phylogenetics").
+   - Fetch the top 5 recent abstracts.
+   - Pass the abstracts through a free LLM (OpenAI API free trial, Claude, or local Ollama) 
+     to extract: (a) 2-bullet summary, (b) study location/country, (c) sample size (if present).
+   - Display the results in a minimal Streamlit web app with a single search bar.
+
+2. Deliverables:
+   - A public GitHub repository link containing:
+     * Clean, documented Python code.
+     * A simple README with instructions on how to run it.
+     * A 1-minute screen recording or screenshot of the working Streamlit UI.
+
+3. What We Are Evaluating:
+   - Code cleanliness and structure.
+   - Proper handling of API calls and missing data.
+   - How robustly they enforce structured LLM outputs (e.g., Pydantic/JSON).
+
+================================================================================
+
+You can be creative as long as the core purpose is intact for this tool. 
+We will give extra points for intuitive UI design. 
+
+PRESENTATION : Must be in 16:9 format, must walk through codebase, show a coherent 
+pipeline diagram (draw.io).
+
+You should demo your tool during the presentation.
+
+You are allowed to use LLMs, but you must declare which step of the process, and how you 
+used it at the very end of your presentation. 
+Show us what prompting methods you used with examples. 
+
+Please remember to upload your work to GitHub and share it with us.
+
+GOOD LUCK!
+
+================================================================================
+
