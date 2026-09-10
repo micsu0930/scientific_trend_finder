@@ -45,7 +45,7 @@ Access the application at http://localhost:8501.
 
 ```mermaid
 graph TD
-    User["PhD Student"] -->|"1. Search keyword"| SearchUI["Streamlit App (app.py)"]
+    User["USER"] -->|"1. Search keyword"| SearchUI["Streamlit App (app.py)"]
     User -->|"2. Select engine"| EngineSelect["Engine Configuration"]
     
     SearchUI -->|"3. Query top 5 articles"| PubMedAPI["PubMed Client (NCBI E-utilities)"]
